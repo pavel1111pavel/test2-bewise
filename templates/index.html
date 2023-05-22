@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Service</title>
+</head>
+<body>
+    <h1>Create User</h1>
+    <form action="/user" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required>
+        <input type="submit" value="Create">
+    </form>
+
+    <h1>Add Audio</h1>
+    <form action="/record" method="post" enctype="multipart/form-data">
+        <label for="user_id">User ID:</label>
+        <input type="text" name="user_id" id="user_id" required><br><br>
+        <label for="access_token">Access Token:</label>
+        <input type="text" name="access_token" id="access_token" required><br><br>
+        <label for="audio">Audio:</label>
+        <input type="file" name="audio" id="audio" accept="audio/wav" required><br><br>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
