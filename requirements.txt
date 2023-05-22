@@ -1,6 +1,6 @@
 Flask
 psycopg2-binary
-ffmpegq
+ffmpeg
 uuid
 flask_sqlalchemy
 sqlalchemy
